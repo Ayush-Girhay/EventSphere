@@ -102,7 +102,7 @@ const getTimeRemaining = (
 
   const fetchEvents = async () => {
     const res = await axios.get(
-      "http://localhost:5000/api/events"
+      "https://eventsphere-mkp6.onrender.com/api/events"
     );
 
     setEvents(res.data.events);
@@ -110,7 +110,7 @@ const getTimeRemaining = (
 
   const fetchStats = async () => {
     const res = await axios.get(
-      "http://localhost:5000/api/stats"
+      "https://eventsphere-mkp6.onrender.com/api/stats"
     );
 
     setStats(res.data);
@@ -183,7 +183,7 @@ useEffect(() => {
     }
 
     await axios.post(
-      "http://localhost:5000/api/events",
+      "https://eventsphere-mkp6.onrender.com/api/events",
       formData,
       {
         headers: {
@@ -211,7 +211,7 @@ useEffect(() => {
 
   const updateEvent = async () => {
     await axios.put(
-  `http://localhost:5000/api/events/${editingId}`,
+  `https://eventsphere-mkp6.onrender.com/api/events/${editingId}`,
   {
     title,
     location,
@@ -643,7 +643,7 @@ useEffect(() => {
     onClick={async () => {
       try {
         await axios.post(
-          `http://localhost:5000/api/events/register/${event._id}`,
+          `https://eventsphere-mkp6.onrender.com/api/events/register/${event._id}`,
           {},
           {
             headers: {
@@ -695,7 +695,7 @@ useEffect(() => {
     onClick={async () => {
       
         await axios.delete(
-  `http://localhost:5000/api/events/${event._id}`,
+  `https://eventsphere-mkp6.onrender.com/api/events/${event._id}`,
   {
     headers: {
       Authorization: `Bearer ${localStorage.getItem(

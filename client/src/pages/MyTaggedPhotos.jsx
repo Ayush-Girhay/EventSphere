@@ -16,7 +16,7 @@ function MyTaggedPhotos() {
     async () => {
       const res =
         await axios.get(
-          "http://localhost:5000/api/media/tagged",
+          "https://eventsphere-mkp6.onrender.com/api/media/tagged",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem(

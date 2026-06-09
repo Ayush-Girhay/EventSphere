@@ -28,7 +28,7 @@ function ScanQR() {
 setResult(data);
 
 await axios.post(
-  "http://localhost:5000/api/events/attendance",
+  "https://eventsphere-mkp6.onrender.com/api/events/attendance",
   {
     eventId:
       data.eventId,

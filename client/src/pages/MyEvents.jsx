@@ -46,7 +46,7 @@ function MyEvents() {
     async () => {
       const res =
         await axios.get(
-          "http://localhost:5000/api/users/registrations",
+          "https://eventsphere-mkp6.onrender.com/api/users/registrations",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem(

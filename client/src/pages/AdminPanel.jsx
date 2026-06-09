@@ -15,7 +15,7 @@ function AdminPanel() {
 
         const res =
           await axios.get(
-            "http://localhost:5000/api/admin/users",
+            "https://eventsphere-mkp6.onrender.com/api/admin/users",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -137,7 +137,7 @@ function AdminPanel() {
                               );
 
                             await axios.put(
-                              `http://localhost:5000/api/admin/users/${user._id}`,
+                              `https://eventsphere-mkp6.onrender.com///api/admin/users/${user._id}`,
                               {
                                 role:
                                   e
@@ -188,7 +188,7 @@ function AdminPanel() {
                               );
 
                             await axios.delete(
-                              `http://localhost:5000/api/admin/users/${user._id}`,
+                              `https://eventsphere-mkp6.onrender.com/api/admin/users/${user._id}`,
                               {
                                 headers:
                                   {

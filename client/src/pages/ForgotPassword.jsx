@@ -19,7 +19,7 @@ function ForgotPassword() {
 
       const res =
         await axios.post(
-          "http://localhost:5000/api/auth/forgot-password",
+          "https://eventsphere-mkp6.onrender.com/api/auth/forgot-password",
           {
             email,
           }
@@ -48,7 +48,7 @@ function ForgotPassword() {
 
         const res =
           await axios.post(
-            "http://localhost:5000/api/auth/reset-password",
+            "https://eventsphere-mkp6.onrender.com/api/auth/reset-password",
             {
               email,
               otp,

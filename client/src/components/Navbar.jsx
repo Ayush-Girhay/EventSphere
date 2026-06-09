@@ -17,7 +17,7 @@ function Navbar() {
   const fetchUnreadCount = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/notifications/count",
+        "https://eventsphere-mkp6.onrender.com/api/notifications/count",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem(

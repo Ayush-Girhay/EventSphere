@@ -19,7 +19,7 @@ function Profile() {
 
         const res =
           await axios.get(
-            "http://localhost:5000/api/users/profile",
+            "https://eventsphere-mkp6.onrender.com/api/users/profile",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -128,7 +128,7 @@ function Profile() {
       try {
 
         await axios.post(
-          "http://localhost:5000/api/users/profile-photo",
+          "https://eventsphere-mkp6.onrender.com/api/users/profile-photo",
           formData,
           {
             headers: {

@@ -17,7 +17,7 @@ useState([]);
   const fetchMedia = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/media"
+        "https://eventsphere-mkp6.onrender.com/api/media"
       );
 
       let mediaData = res.data.mediaFiles;
@@ -77,7 +77,7 @@ useState([]);
     const likeImage = async (id) => {
   try {
     await axios.post(
-      `http://localhost:5000/api/media/like/${id}`,
+      `https://eventsphere-mkp6.onrender.com/api/media/like/${id}`,
       {},
       {
         headers: {
@@ -110,7 +110,7 @@ const searchMedia = async (
 
     const res =
       await axios.get(
-        `http://localhost:5000/api/media/search?search=${value}`
+        `https://eventsphere-mkp6.onrender.com/api/media/search?search=${value}`
       );
 
     setMedia(
@@ -149,7 +149,7 @@ const searchMedia = async (
   src={
     item.url
       ? item.url
-      : `http://localhost:5000/uploads/${item.filename}`
+      : `https://eventsphere-mkp6.onrender.com/uploads/${item.filename}`
   }
   alt=""
   className="w-full h-60 object-cover cursor-pointer"
@@ -160,7 +160,7 @@ const searchMedia = async (
 
   const res =
     await axios.get(
-      `http://localhost:5000/api/media/similar/${item._id}`
+      `https://eventsphere-mkp6.onrender.com/api/media/similar/${item._id}`
     );
 
   setSimilarPhotos(
@@ -231,7 +231,7 @@ const searchMedia = async (
   onClick={async () => {
   try {
     await axios.post(
-      `http://localhost:5000/api/media/favorite/${item._id}`,
+      `https://eventsphere-mkp6.onrender.com/api/media/favorite/${item._id}`,
       {},
       {
         headers: {
@@ -257,7 +257,7 @@ const searchMedia = async (
                     className="bg-red-600 px-3 py-2 rounded"
                     onClick={async () => {
                       await axios.delete(
-                        `http://localhost:5000/api/media/${item._id}`
+                        `https://eventsphere-mkp6.onrender.com/api/media/${item._id}`
                       );
 
                       fetchMedia();
@@ -289,7 +289,7 @@ const searchMedia = async (
                 src={
                     selectedImage.url
                     ? selectedImage.url
-                    : `http://localhost:5000/uploads/${selectedImage.filename}`
+                    : `https://eventsphere-mkp6.onrender.com/uploads/${selectedImage.filename}`
                 }
                 alt=""
                 className="max-h-[70vh] w-auto mx-auto rounded-xl object-contain"
@@ -329,7 +329,7 @@ const searchMedia = async (
   href={
     selectedImage.url
       ? selectedImage.url
-      : `http://localhost:5000/uploads/${selectedImage.filename}`
+      : `https://eventsphere-mkp6.onrender.com/uploads/${selectedImage.filename}`
   }
   download
   className="bg-cyan-600 px-4 py-2 rounded"
@@ -343,7 +343,7 @@ const searchMedia = async (
                     navigator.clipboard.writeText(
   selectedImage.url
     ? selectedImage.url
-    : `http://localhost:5000/uploads/${selectedImage.filename}`
+    : `https://eventsphere-mkp6.onrender.com/uploads/${selectedImage.filename}`
 );
                   }}
                 >
@@ -411,7 +411,7 @@ const searchMedia = async (
                     
                     onClick={async () => {
                       await axios.post(
-                        `http://localhost:5000/api/media/comment/${selectedImage._id}`,
+                        `https://eventsphere-mkp6.onrender.com/api/media/comment/${selectedImage._id}`,
                         {
                           text: comment,
                         }
@@ -421,7 +421,7 @@ const searchMedia = async (
 
                       const updated =
                         await axios.get(
-                          "http://localhost:5000/api/media"
+                          "https://eventsphere-mkp6.onrender.com/api/media"
                         );
 
                       const current =

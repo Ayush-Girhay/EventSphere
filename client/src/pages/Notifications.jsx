@@ -15,7 +15,7 @@ function Notifications() {
   fetchNotifications();
 
   axios.put(
-    "http://localhost:5000/api/notifications/read",
+    "https://eventsphere-mkp6.onrender.com/api/notifications/read",
     {},
     {
       headers: {
@@ -30,7 +30,7 @@ function Notifications() {
   const fetchNotifications = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/notifications",
+        "https://eventsphere-mkp6.onrender.com/api/notifications",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem(

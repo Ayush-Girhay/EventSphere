@@ -32,7 +32,7 @@ const fetchUsers =
     try {
       const res =
         await axios.get(
-          "http://localhost:5000/api/admin/users",
+          "https://eventsphere-mkp6.onrender.com/api/admin/users",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem(
@@ -135,7 +135,7 @@ useEffect(() => {
 );
 
       await axios.post(
-        "http://localhost:5000/api/media/upload",
+        "https://eventsphere-mkp6.onrender.com/api/media/upload",
         formData,
         {
           headers: {
