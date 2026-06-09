@@ -1,6 +1,6 @@
 const cron = require("node-cron");
 const Event = require("../models/Event");
-const User = require("../models/User");
+const User = require("../models/user");
 const transporter =
   require("../config/mailer");
 
