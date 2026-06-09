@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const User = require("../models/user");
 const Event = require("../models/Event");
 const Media = require("../models/Media");
 
