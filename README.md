@@ -148,14 +148,18 @@ CLIENT_URL=http://localhost:5173
 
 ## 📸 Screenshots
 
-Add screenshots of:
+<img width="1902" height="873" alt="image" src="https://github.com/user-attachments/assets/9c856a6c-51da-4f88-a3bd-eb8f7092d48e" />
 
-* Home Page
-* Login Page
-* Dashboard
-* Event Management
-* Notifications
-* Admin Panel
+<img width="1908" height="843" alt="image" src="https://github.com/user-attachments/assets/e7ccf337-6c7b-4554-993f-debcbc6c50cb" />
+
+<img width="392" height="864" alt="image" src="https://github.com/user-attachments/assets/072ae125-f795-4775-a79f-2f28ae889917" />
+
+<img width="1887" height="858" alt="image" src="https://github.com/user-attachments/assets/eaebf805-210f-4f35-ad88-5011d9249160" />
+
+<img width="1867" height="852" alt="image" src="https://github.com/user-attachments/assets/551008ee-63ec-4eab-ad8c-83a4f8f580cd" />
+
+<img width="1902" height="811" alt="image" src="https://github.com/user-attachments/assets/84db198d-5237-4d56-b07d-7b99b002c641" />
+
 
 ---
 
